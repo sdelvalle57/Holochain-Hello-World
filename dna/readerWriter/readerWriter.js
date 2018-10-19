@@ -3,7 +3,11 @@ function genesis() {
 }
 
 function validateCommit() {
-  return true
+  return true;
+}
+
+function validatePut() {
+  return true;
 }
 
 function holoTextWrite(text) {
@@ -12,6 +16,6 @@ function holoTextWrite(text) {
 }
 
 function holoTextRead(hash) {
-  var holoText = get(hash, { Local: true });
+  var holoText = get(hash);
   return holoText;
 }
